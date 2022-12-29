@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, ListGroup } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 const About = ({ name, city, hobbies }) => {
   return (
@@ -23,6 +24,12 @@ const About = ({ name, city, hobbies }) => {
       </ListGroup>
     </Card>
   )
+}
+
+About.propTypes = {
+  name: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  hobbies: PropTypes.array.isRequired,
 }
 
 export default About
