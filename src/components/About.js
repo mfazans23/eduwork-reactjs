@@ -4,11 +4,7 @@ import PropTypes from 'prop-types'
 
 const About = ({ name, city, hobbies }) => {
   return (
-    <Card
-      bg='danger'
-      text='white'
-      style={{ width: '18rem', display: 'inline-block' }}
-    >
+    <Card bg='danger' text='white' className='' style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title>About Me</Card.Title>
         <Card.Text>
